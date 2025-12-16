@@ -1,7 +1,9 @@
+import { Presentation } from "./components/Presentation";
+
 function App() {
 	return (
 		<>
-			<p>Hello world</p>
+			<Presentation />
 		</>
 	);
 }

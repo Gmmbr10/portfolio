@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mark {
+    padding: 4px 8px;
+    background-color: #44f;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+}
