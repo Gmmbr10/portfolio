@@ -1,0 +1,23 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 24px;
+}
+
+.title {
+    grid-column: 1/4;
+}
+
+.describe {
+    color: #79716B;
+}
+
+.link {
+    color: #2B7FFF;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
