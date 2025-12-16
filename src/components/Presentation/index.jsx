@@ -12,7 +12,7 @@ export function Presentation(){
                     I'm based on Brazil and looking for a job
                 </p>
                 <p>
-                    I'm curious about IT, so I'm always studying it
+                    I'm curious, so I'm always studying something (mainly IT)
                 </p>
             </div>
         </section>
