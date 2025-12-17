@@ -1,12 +1,13 @@
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
 import style from "./about.module.css";
+import imageCode from "../../assets/code.jpg"
 
 export function About() {
 	return (
 		<div className={`${style.container}`}>
 			<div className={`${style.imageBox}`}>
 				<img
-					src="https://images.unsplash.com/photo-1607706009771-de8808640bcf?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+					src={imageCode}
 					className={`${style.image}`}
 				/>
 			</div>
