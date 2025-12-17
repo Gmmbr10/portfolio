@@ -1,5 +1,5 @@
 .container {
-    height: 90dvh;
+    height: 85dvh;
     display: flex;
     flex-direction: row;
     gap: 16px;
@@ -42,7 +42,7 @@
 
 @media (max-width: 950px) {
     .container {
-        height: 95dvh;
+        height: 90dvh;
         flex-direction: column;
         gap: 32px;
     }
