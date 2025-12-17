@@ -30,12 +30,12 @@ export function Skills() {
 			skill: "Node.js",
 		},
 		{
-            skill: "Laravel",
+			skill: "Laravel",
 			badge: "badge-orange",
 		},
-        {
-            skill: "Express.js",
-        },
+		{
+			skill: "Express.js",
+		},
 	];
 
 	const others = [
@@ -44,13 +44,13 @@ export function Skills() {
 			badge: "badge-blue",
 		},
 		{
-            skill: "Git",
+			skill: "Git",
 			badge: "badge-red",
 		},
-        {
-            skill: "MySQL",
-            badge: "badge-orange",
-        },
+		{
+			skill: "MySQL",
+			badge: "badge-orange",
+		},
 		{
 			skill: "GitHub",
 			badge: "badge-purple",
@@ -63,7 +63,10 @@ export function Skills() {
 
 	const loadElements = (array) => {
 		return array.map(({ skill, badge }, index) => (
-			<span className={`${style.badge} ${badge != null ? style[badge] : ""}`} key={index}>
+			<span
+				className={`${style.badge} ${badge != null ? style[badge] : ""}`}
+				key={index}
+			>
 				{skill}
 			</span>
 		));
@@ -75,15 +78,15 @@ export function Skills() {
 			<div className={`${style.content}`}>
 				<Card className={`${style.card}`}>
 					<h3 className={`${style.cardTitle}`}>Languages</h3>
-                    {loadElements(languages)}
+					{loadElements(languages)}
 				</Card>
 				<Card className={`${style.card}`}>
 					<h3 className={`${style.cardTitle}`}>Frameworks and libraries</h3>
-                    {loadElements(frameworks)}
+					{loadElements(frameworks)}
 				</Card>
 				<Card className={`${style.card}`}>
 					<h3 className={`${style.cardTitle}`}>Others</h3>
-                    {loadElements(others)}
+					{loadElements(others)}
 				</Card>
 			</div>
 		</section>
