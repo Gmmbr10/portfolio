@@ -1,5 +1,57 @@
 .container {
+    min-height: max-content;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    background-color: #1C1917;
+}
+
+.imageBox {
+    flex: 0 0 calc(30% - 16px);
+    overflow: hidden;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.description {
+    padding: 12px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    gap: 32px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.navbar>a {
+    color: #155DFC;
+}
+
+.navbar>a:hover {
+    color: #51A2FF;
+}
+
+@media (max-width: 950px) {
+    .container {
+        padding: 20px;
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .imageBox {
+        display: none;
+    }
+
+    .description {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
 }
