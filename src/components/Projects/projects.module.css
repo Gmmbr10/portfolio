@@ -6,7 +6,7 @@
 }
 
 .title {
-    grid-column: 1/4;
+    grid-column: 1/-1;
 }
 
 .describe {
@@ -20,4 +20,16 @@
 
 .link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+    .container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
