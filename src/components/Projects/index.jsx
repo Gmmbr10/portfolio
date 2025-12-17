@@ -5,19 +5,19 @@ export function Projects(){
 
     const projects = [
         {
-            title: 'title 1',
-            description: 'A litte description',
-            github: 'gmmbr10',
+            title: 'Connect Learn',
+            description: 'A homeschooler\'s network system',
+            github: 'connect_learn',
         },
         {
-            title: 'title 2',
-            description: 'A litte description',
-            github: 'gmmbr10',
+            title: 'Triagem service',
+            description: 'A microservice for hospital\'s triage',
+            github: 'triagem-service',
         },
         {
-            title: 'title 3',
-            description: 'A litte description',
-            github: 'gmmbr10',
+            title: 'Urban Cut',
+            description: 'A barber\'s scheduling system',
+            github: 'urban-cut',
         },
     ];
 
