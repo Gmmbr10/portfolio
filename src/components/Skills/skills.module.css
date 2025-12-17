@@ -24,7 +24,6 @@
 }
 
 .card {
-    height: max-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -39,6 +38,7 @@
 }
 
 .badge {
+    height: max-content;
     font-size: 9pt;
     padding: 10px 14px;
     font-weight: bold;
