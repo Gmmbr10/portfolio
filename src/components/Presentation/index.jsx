@@ -1,11 +1,12 @@
 import style from "./presentation.module.css";
+import imageProfile from "../../assets/profile.jpeg"
 
 export function Presentation() {
 	return (
 		<section className={`${style.container}`}>
 			<div className={`${style.imageBox}`}>
 				<img
-					src="https://github.com/gmmbr10.png"
+					src={imageProfile}
 					className={`${style.image}`}
 				/>
 			</div>
