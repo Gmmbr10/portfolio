@@ -41,6 +41,8 @@ body {
 }
 
 #root {
+    max-width: 1400px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     gap: 32px;
