@@ -15,20 +15,20 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    color: #b4b4b4;
+    color: var(--text-gray-light);
 }
 
 .title {
     font-weight: 300;
     font-size: 16pt;
-    color: #fff;
+    color: var(--text);
 }
 
 .highlight {
     font-weight: bold;
     font-size: 48pt;
     line-height: 1;
-    color: #155DFC;
+    color: var(--text-primary);
 }
 
 .imageBox {

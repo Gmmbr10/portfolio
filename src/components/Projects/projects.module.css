@@ -10,11 +10,11 @@
 }
 
 .describe {
-    color: #79716B;
+    color: var(--text-gray);
 }
 
 .link {
-    color: #2B7FFF;
+    color: var(--link-primary);
     cursor: pointer;
 }
 
