@@ -1,9 +1,0 @@
-.card {
-    padding: 24px;
-    background-color: var(--bg-secondary);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: start;
-}

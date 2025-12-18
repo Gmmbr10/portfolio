@@ -1,4 +1,3 @@
-import { Card } from "../Card";
 import style from "./projects.module.css";
 
 export function Projects() {
@@ -23,7 +22,7 @@ export function Projects() {
 	const projectElements = projects.map(
 		({ title, description, github }, index) => {
 			return (
-				<Card key={index}>
+				<div key={index}>
 					<h3>{title}</h3>
 					<p className={`${style.describe}`}>{description}</p>
 					<a
@@ -33,7 +32,7 @@ export function Projects() {
 					>
 						Click here to see
 					</a>
-				</Card>
+				</div>
 			);
 		}
 	);
