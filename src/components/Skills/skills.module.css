@@ -1,5 +1,6 @@
 .container {
-    height: 85dvh;
+    min-height: 85dvh;
+    height: max-content;
     padding: 64px 0 32px;
     display: flex;
     flex-direction: column;
@@ -30,4 +31,16 @@
 
 .item {
     color: var(--text-gray-light);
+}
+
+@media (max-width: 950px) {
+    .container {
+        text-align: center;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
