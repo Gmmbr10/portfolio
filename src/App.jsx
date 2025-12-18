@@ -8,8 +8,8 @@ function App() {
 		<>
 			<Presentation />
 			<About />
-			<Projects />
 			<Skills />
+			<Projects />
 		</>
 	);
 }

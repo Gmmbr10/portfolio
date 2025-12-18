@@ -1,73 +1,33 @@
 .container {
+    height: 85dvh;
+    padding: 64px 0 32px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 32px;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto;
-    gap: 24px;
-}
-
-@media (max-width: 850px) {
-    .content {
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-
-@media (max-width: 550px) {
-    .content {
-        grid-template-columns: 1fr;
-    }
-}
-
-.card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
+    justify-content: space-between;
+    gap: 16px;
 }
 
-.cardTitle {
-    width: 100%;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.badge {
-    height: max-content;
-    font-size: 9pt;
-    padding: 10px 14px;
+.title {
     font-weight: bold;
-    border-radius: 8px;
-    background-color: #fff;
-    color: #0C0A09;
+    font-size: 48pt;
+    color: var(--text-primary);
 }
 
-.badge-purple {
-    background-color: #4B004F;
-    color: #fff;
+.list {
+    flex: 1;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.badge-blue {
-    background-color: #44f;
-    color: #fff;
-}
-
-.badge-orange {
-    background-color: #FF6900;
-    color: #0C0A09;
-}
-
-.badge-yellow {
-    background-color: #FDC700;
-    color: #0C0A09;
-}
-
-.badge-red {
-    background-color: #FB2C36;
-    color: #0C0A09;
+.item {
+    color: var(--text-gray-light);
 }
