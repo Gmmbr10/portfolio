@@ -1,0 +1,40 @@
+.container {
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--bg-secondary);
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text-gray-light);
+}
+
+.icon {
+    color: var(--text-primary);
+    display: grid;
+    place-content: center;
+}
+
+.button {
+    width: max-content;
+    padding: 8px 12px;
+    background-color: var(--bg-button);
+    color: var(--text-contrast);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}

@@ -1,46 +1,37 @@
+import { Project } from "../Project";
 import style from "./projects.module.css";
 
 export function Projects() {
-	const projects = [
-		{
-			title: "Connect Learn",
-			description: "A homeschooler's network system",
-			github: "connect_learn",
-		},
-		{
-			title: "Triagem service",
-			description: "A microservice for hospital's triage",
-			github: "triagem-service",
-		},
-		{
-			title: "Urban Cut",
-			description: "A barber's scheduling system",
-			github: "urban-cut",
-		},
-	];
-
-	const projectElements = projects.map(
-		({ title, description, github }, index) => {
-			return (
-				<div key={index}>
-					<h3>{title}</h3>
-					<p className={`${style.describe}`}>{description}</p>
-					<a
-						href={`https://github.com/gmmbr10/${github}`}
-						target="_blank"
-						className={`${style.link}`}
-					>
-						Click here to see
-					</a>
-				</div>
-			);
-		}
-	);
-
 	return (
 		<section className={`${style.container}`}>
-			<h2 className={`${style.title}`}>Main projects</h2>
-			{projectElements}
+			<h2 className={`${style.title}`}>My projects</h2>
+			<section className={`${style.content}`}>
+				<Project
+					name="Connect Learn"
+					link="https://github.com/gmmbr10/connect-learn"
+				>
+					<p>
+						Academic project aimed at developing an educational platform,
+						working on the front-end, back-end and infrastructure of the
+						application.
+					</p>
+				</Project>
+				<Project
+					name="Triagem Service"
+					link="https://github.com/gmmbr10/triagem-service"
+				>
+					<p>
+						Academic project focused on creating a medical screening system with
+						scalable architecture and integration between modules.
+					</p>
+				</Project>
+				<Project name="Urban Cut" link="https://github.com/gmmbr10/urban-cut">
+					<p>
+						Academic project aimed at developing an application for haircut
+						scheduling.
+					</p>
+				</Project>
+			</section>
 		</section>
 	);
 }

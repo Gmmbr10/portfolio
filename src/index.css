@@ -14,14 +14,19 @@
 
     --bg-primary: #0C0A09;
     --bg-secondary: #1C1917;
+
+    --bg-button: #2B7FFF;
     
     --text: #fff;
     --text-gray: #79716B;
     --text-gray-light: #b4b4b4;
     --text-primary: #2B7FFF;
+    --text-contrast: #0C0A09;
     
     --link-primary: #155DFC;
     --link-primary-hover: #51A2FF;
+
+    --shadow: #2b80ff;
 }
 
 body {
